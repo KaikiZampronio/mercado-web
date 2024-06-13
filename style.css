@@ -1,0 +1,268 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f7f7; /* Cor de fundo suave */
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  margin-bottom: 2em;
+  border-bottom: 3px solid #c94e50; /* Cor de destaque */
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Playfair Display', serif; /* Fonte elegante */
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c94e50; /* Cor de destaque no hover */
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo dentro de main */
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #c94e50; /* Cor de destaque */
+  font-family: 'Playfair Display', serif; /* Fonte elegante */
+}
+
+.produto {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.2s ease;
+  border-radius: 5px; /* Borda arredondada */
+  display: inline-block; /* Exibe produtos em linha */
+  vertical-align: top; /* Alinha no topo */
+  width: calc(33.33% - 20px); /* Define largura responsiva com margens */
+  margin: 0 10px 20px; /* Margens ajustadas */
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  border-radius: 5px; /* Borda arredondada para imagens */
+}
+
+.produto h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  font-family: 'Playfair Display', serif; /* Fonte elegante */
+  color: #333;
+}
+
+.produto p {
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+.produto button {
+  background-color: #c94e50; /* Cor de destaque */
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Borda arredondada */
+}
+
+.produto button:hover {
+  background-color: #a43c3f; /* Cor de destaque mais escura no hover */
+}
+
+.carrinho-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1em 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo do formulário */
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="url"],
+form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #c94e50; /* Cor de destaque */
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Borda arredondada */
+}
+
+form button:hover {
+  background-color: #a43c3f; /* Cor de destaque mais escura no hover */
+}
+
+.carrinho {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+.carrinho-item p {
+  margin-bottom: 0.5em;
+}
+
+.total {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
+  color: #c94e50; /* Cor de destaque */
+}
+
+.checkout-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo do formulário */
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="select"] {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.checkout-form select {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.checkout-form button {
+  background-color: #c94e50; /* Cor de destaque */
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Borda arredondada */
+}
+
+.checkout-form button:hover {
+  background-color: #a43c3f; /* Cor de destaque mais escura no hover */
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo do formulário */
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.login-form button {
+  background-color: #c94e50; /* Cor de destaque */
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Borda arredondada */
+}
+
+.login-form button:hover {
+  background-color: #a43c3f; /* Cor de destaque mais escura no hover */
+}
